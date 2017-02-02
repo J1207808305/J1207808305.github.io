@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
 .gtco-nav ul li.active > a {
-  color: #fff !important;
+  color: #52d3aa !important;
 }
 
 #gtco-header,
@@ -310,7 +310,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-cover {
-  height: 900px;
+  height: 1100px;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
