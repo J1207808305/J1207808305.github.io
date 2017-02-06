@@ -5,9 +5,42 @@
     <description>嵌入式与你一起探索zephyr的世界</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 07 Feb 2017 00:05:53 +0800</pubDate>
-    <lastBuildDate>Tue, 07 Feb 2017 00:05:53 +0800</lastBuildDate>
+    <pubDate>Tue, 07 Feb 2017 00:39:46 +0800</pubDate>
+    <lastBuildDate>Tue, 07 Feb 2017 00:39:46 +0800</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
+    
+      <item>
+        <title>openocd note</title>
+        <description>&lt;p&gt;#openpcd使用笔记#&lt;/p&gt;
+
+&lt;p&gt;##入门方法##&lt;/p&gt;
+
+&lt;p&gt;1、在新的终端中输入 telnet localhost 4444&lt;/p&gt;
+
+&lt;p&gt;port        端口&lt;/p&gt;
+
+&lt;p&gt;telnet_port 4444
+gdb_port    3333
+tcl_port    6666&lt;/p&gt;
+
+&lt;p&gt;2、输入halt  擦除命令&lt;/p&gt;
+
+&lt;p&gt;3、flash write_image rease [bin文件的目录]&lt;/p&gt;
+
+&lt;p&gt;4、reset命令重新启动就可以看到下载好的程序&lt;/p&gt;
+</description>
+        <pubDate>Tue, 07 Feb 2017 00:35:34 +0800</pubDate>
+        <link>http://localhost:4000/johnny/update/2017/02/07/openocd/</link>
+        <guid isPermaLink="true">http://localhost:4000/johnny/update/2017/02/07/openocd/</guid>
+        
+        <category>技术</category>
+        
+        
+        <category>Johnny</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Hello 2017</title>

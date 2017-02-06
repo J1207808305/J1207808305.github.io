@@ -4,7 +4,7 @@ title:  "Welcome to Johnny's Website!"
 date:   2017-02-06 00:10:34 +0800
 categories: Johnny update
 author:     "Johnny"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-bg-os-metro.jpg"
 catalog: true
 tags:
     - 生活
