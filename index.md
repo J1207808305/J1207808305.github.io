@@ -5,4 +5,4 @@
 layout: home
 ---
 
-# welcome Johnny's website#
+# welcome to Johnny's website#

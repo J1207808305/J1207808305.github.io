@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 清泉
+SEOTitle: Johnny的博客 | johnny Blog
 email: johnny@clspring.com
 description: > # this means to ignore newlines until "baseurl:"
   室内定位（UWB），zephyr 学习者，菜鸟级嵌入式程序员。感谢jekyll提供的博客框架!
@@ -30,3 +31,12 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
+sidebar-avatar:                         #你的大头贴，请使用绝对地址.
+                                        
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
