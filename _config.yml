@@ -1,11 +1,7 @@
 # Site settings
 title: 清泉
-<<<<<<< HEAD
-SEOTitle: Johnny的博客 | johnny Blog
-=======
 SEOTitle: 清泉 | Clspring
 header-img: img/home-bg.jpg
->>>>>>> 6ff6e84ed356e3b01ad558e0013355439ecec11c
 email: johnny@clspring.com
 description: "嵌入式与你一起探索zephyr的世界"
 keyword: "清泉,zephyr,UWB,嵌入式"
@@ -46,14 +42,6 @@ gems: [jekyll-paginate]
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
-<<<<<<< HEAD
-theme: minima
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
-=======
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
@@ -79,18 +67,9 @@ ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 ga_domain: huangxuan.me
 
 
->>>>>>> 6ff6e84ed356e3b01ad558e0013355439ecec11c
-
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
-<<<<<<< HEAD
-sidebar-avatar:                         #你的大头贴，请使用绝对地址.
-                                        
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-=======
 sidebar-avatar: /img/avatar-Hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -117,4 +96,3 @@ friends: [
         href: "http://mida.re/"
     }
 ]
->>>>>>> 6ff6e84ed356e3b01ad558e0013355439ecec11c
