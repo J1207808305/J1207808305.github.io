@@ -1,9 +1,8 @@
 ---
-layout: keynote
+layout: post
 title:  "Welcome to Johnny's Website!"
 subtitle:   "My life is full of color again"
 date:   2017-02-06 00:10:34 +0800
-navcolor:   "invert"
 author:     "Johnny"
 header-img: "img/post-bg-os-metro.jpg"
 catalog: true
