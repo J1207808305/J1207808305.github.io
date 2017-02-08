@@ -1,6 +1,6 @@
 # Site settings
 title: 清泉
-SEOTitle: 清泉 | Clspring
+SEOTitle: 清泉 | clspring
 header-img: img/home-bg.jpg
 email: johnny@clspring.com
 description: "嵌入式与你一起探索zephyr的世界"
@@ -48,12 +48,12 @@ kramdown:
 
 
 # Disqus settings
-#disqus_username: _your_disqus_short_name_
+# disqus_username: 6384530214440928000
 
 # Duoshuo settings
-duoshuo_username: 清泉
+# duoshuo_username: 6384530214440928000
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 
@@ -89,11 +89,15 @@ service-worker: true
 # Friends
 # 格式
 # {
-#     title: "name"
+#     title: "name",
 #     href: "url"
 # },{
 #     title: "Su",
 #     href: "http://su.gallery/"
 # }
 friends: [
+  {
+    title: "zephyr",
+    href: "https://www.zephyrproject.org/"
+  }
 ]
