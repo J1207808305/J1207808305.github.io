@@ -68,7 +68,7 @@ ba_track_id: 8a98019243ed6ae1d6a8c691092cb9a8
 
 
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
+sidebar: false                           # whether or not using Sidebar.
 sidebar-about-description: "做嵌入式的程序猿，<br>整天都是在黑暗的世界中编程"
 sidebar-avatar: /img/avatar-Hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
