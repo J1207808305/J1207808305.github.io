@@ -1,6 +1,7 @@
 ---
 title: "关于"
 description: "Hey, this is Johnny."
+header-img: "img/about-bg.jpg"
 ---
 
 <!DOCTYPE HTML>
@@ -8,7 +9,6 @@ description: "Hey, this is Johnny."
 <head>
 {% include head.html %}
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
 </head>
 <body>
@@ -19,10 +19,9 @@ description: "Hey, this is Johnny."
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading" id="tag-heading">
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <!--<hr class="small">-->
                     <span class="subheading">{{ page.description }}</span>
                 </div>
             </div>
@@ -44,22 +43,7 @@ description: "Hey, this is Johnny."
 
 	<!--BIO PARAGRAPH-->
 	<p>	
-		Known as "THE MOLITOR", I'm a web designer and WordPress theme developer living in the outskirts of Seattle with my wife and two kids. I'm an active author on ThemeForest where I enjoy spending my day in Photoshop converting custom designs into fancy-pants <a title="Selected Work" data-rel="prettyPhoto[pp_gal]" href="images/portfolio/noc.jpg">WordPress themes</a>
-		
-		<!--////////////////////////////////////////////////////////////////////////////////////////-->
-		<!--IMAGES BELOW ARE HIDDEN AND WILL ONLY APPEAR IN THE GALLERY LINKED TO IN ABOVE PARAGRAPH -->
-		<!--////////////////////////////////////////////////////////////////////////////////////////-->
-		<a title="Selected Work" class="selectedWork" data-rel="prettyPhoto[pp_gal]" href="images/portfolio/producer.jpg"></a>
-		<a title="Selected Work" class="selectedWork" data-rel="prettyPhoto[pp_gal]" href="images/portfolio/photopharm.jpg"></a>
-		<a title="Selected Work" class="selectedWork" data-rel="prettyPhoto[pp_gal]" href="images/portfolio/brick.jpg"></a>
-		<a title="Selected Work" class="selectedWork" data-rel="prettyPhoto[pp_gal]" href="images/portfolio/nav.jpg"></a>
-		<a title="Selected Work" class="selectedWork" data-rel="prettyPhoto[pp_gal]" href="images/portfolio/novelist.jpg"></a>
-		<a title="Selected Work" class="selectedWork" data-rel="prettyPhoto[pp_gal]" href="images/portfolio/dailypress.jpg"></a>
-		<a title="Selected Work" class="selectedWork" data-rel="prettyPhoto[pp_gal]" href="images/portfolio/eventure.jpg"></a>
-		<a title="Selected Work" class="selectedWork" data-rel="prettyPhoto[pp_gal]" href="images/portfolio/politico.jpg"></a>
-		<a title="Selected Work" class="selectedWork" data-rel="prettyPhoto[pp_gal]" href="images/portfolio/zoom.jpg"></a>
-		<a title="Selected Work" class="selectedWork" data-rel="prettyPhoto[pp_gal]" href="images/portfolio/chameleon.jpg"></a>
-		<a title="Selected Work" class="selectedWork" data-rel="prettyPhoto[pp_gal]" href="images/portfolio/maitred.jpg"></a>
+		Known as "THE MOLITOR", I'm a web designer and WordPress theme developer living in the outskirts of Seattle with my wife and two kids. I'm an active author on ThemeForest where I enjoy spending my day in Photoshop converting custom designs into fancy-pants WordPress themes.
 	</p>
 	
 </div><!--end bio-->
@@ -163,21 +147,7 @@ description: "Hey, this is Johnny."
 
 <!--AS SEEN ON-->
 <ul id="seenOn">
-	<li class="bwWrapper"><img src="images/logos/abduzeedo.jpg" alt="Abduzeedo" /></li> 
-	<li class="bwWrapper"><img src="images/logos/logo.png" alt="Awwwards" /></li> 
-	<li class="bwWrapper"><img src="images/logos/creattica.png" alt="Creattica" /></li> 
-	<li class="bwWrapper"><img src="images/logos/css_mania.png" alt="CSS Mania" /></li> 
-	<li class="bwWrapper"><img src="images/logos/designers_couch.png" alt="Designers Couch" /></li> 
-	<li class="bwWrapper"><img src="images/logos/dribbble.png" alt="Dribbble" /></li> 
-	<li class="bwWrapper"><img src="images/logos/design_shack.png" alt="Design Shack" /></li> 
-	<li class="bwWrapper"><img src="images/logos/envato_notes.png" alt="Envato Notes" /></li> 
-	<li class="bwWrapper"><img src="images/logos/qnt_gallery.png" alt="qnt gallery" /></li> 
-	<li class="bwWrapper"><img src="images/logos/specky_boy.png" alt="specky boy" /></li> 
-	<li class="bwWrapper"><img src="images/logos/themeforest.png" alt="ThemeForest" /></li> 
-	<li class="bwWrapper"><img src="images/logos/unmatchedstyle.png" alt="unmatchedstyle" /></li> 
-	<li class="bwWrapper"><img src="images/logos/webdepot.jpg" alt="Web Designer Depot" /></li> 
-	<li class="bwWrapper"><img src="images/logos/webmag.jpg" alt="Web Designer mag" /></li> 
-	<li class="bwWrapper"><img src="images/logos/wptv-logo.png" alt="WordPress TV" /></li>
+
 </ul><!--end seenOn-->
 
 <div class="clear"></div>
@@ -248,54 +218,20 @@ description: "Hey, this is Johnny."
 
 <!--CONTACT FORM-->
 <div id="contactform"  class="contact">
-	<form action="send.php" method="post" >
-	
-		<div id="contactInfo">
-    	<p>
-    		<label class="smallInput" for="name">名字 <span class="required">*</span></label><br />
-    		<input type="text" name="name" id="name" value="" class="input round3" /> 
-    	</p>
-    	<p>
-    		<label class="smallInput" for="email">邮箱 <span class="required">*</span></label><br />
-    		<input type="text" name="email" id="email" value="" class="input round3" /> 
-    	</p>
-		<p>
-    		<label class="smallInput" for="phone">电话/手机</label><br />
-    		<input type="text" name="phone" id="phone" value="" class="input round3" /> 
-    	</p>
-    	</div>
-    	<p id="emailMessage">
-    		<label class="smallInput" for="message">信息 <span class="required">*</span></label><br />
-    		<textarea name="message" id="message" class="input round3"></textarea>
-    	</p>
-    	
-    	<!-- EMAIL SUBJECT -->
-    	<input name="subject" id="subject" type="hidden" value="Resume Email Message" />
-    	<!-- YOUR EMAIL ADDRESS -->
-    	<input name="repemail" id="repemail" type="hidden" value="1207808305@qq.com" />
-    	<!-- ENTER YOUR URL BELOW: MUST CONTAIN #contact AT THE END OF THE URL-->
-    	<input name="pagelink" id="pagelink" type="hidden" value="http://www.clspring.com/applicant#contact" />
-    	<input name="send" id="submit_btn" type="submit" class="round3 clearRight" value="Send Message" />
-    	
-    	<p id="required"><span class="required">*</span> <em>= 请求失败</em></p>
-    </form>
-</div><!--end contact form-->
 
-<p id="messageSent">信息已经发送. 谢谢!</p>
+</div><!--end contact form-->
 
 <div class="clear"></div>
 </div><!--end wrapper-->
 
 <!--SCRIPTS-->
 <script src="js/jquery.js"></script>
-<script src="js/prettyPhoto.js"></script>
 <script src="js/backPosition.js"></script>
 <script src="js/custom.js"></script>
+{% include script.html %}
 
 <footer>
 {% include footer.html %}
-
-{% include script.html %}
 </footer>
 
 </body>
