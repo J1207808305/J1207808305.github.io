@@ -99,5 +99,8 @@ friends: [
   {
     title: "zephyr",
     href: "https://www.zephyrproject.org/"
+  },{
+    title: "tensorfly",
+    href: "http://www.tensorfly.cn/"
   }
 ]

@@ -132,30 +132,6 @@ h2#contact:before {background-position: right bottom;}
 }
 .socialIcon:hover {border: none;}
 
-#rssIcon {background-position: 0 0;}
-#youTubeIcon {background-position: -30px 0;}
-#vimeoIcon {background-position: -60px 0;}
-#twitterIcon {background-position: -90px 0;}
-#mySpaceIcon {background-position: -120px 0;}
-#dribbbleIcon {background-position: -150px 0;}
-#gplusIcon {background-position: -180px 0;}
-#facebookIcon {background-position: -210px 0}
-#flickrIcon {background-position: -240px 0;}
-#favIcon {background-position: -270px 0;}
-#linkedinIcon {background-position: -300px 0;}
-
-#rssIcon:hover {background-position: 0 -30px;}
-#youTubeIcon:hover {background-position: -30px -30px;}
-#vimeoIcon:hover {background-position: -60px -30px;}
-#twitterIcon:hover {background-position: -90px -30px;}
-#mySpaceIcon:hover {background-position: -120px -30px;}
-#dribbbleIcon:hover {background-position: -150px -30px;}
-#gplusIcon:hover {background-position: -180px -30px;}
-#facebookIcon:hover {background-position: -210px -30px;}
-#flickrIcon:hover {background-position: -240px -30px;}
-#favIcon:hover {background-position: -270px -30px;}
-#linkedinIcon:hover {background-position: -300px -30px;}
-
 /* ---------------------------*/
 /*---RECOMMENDATIONS STUFF---*/
 /* -------------------------*/

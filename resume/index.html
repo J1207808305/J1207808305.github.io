@@ -5,21 +5,34 @@ title: "关于"
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>About</title>
-<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+{% include head.html %}
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
 </head>
 <body>
 
+{% include nav.html %}
+
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
 <!--STICKER-->
 <div id="sticker"></div>
 
 <div id="wrapper">
-
-{% include nav.html %}
 
 <!--BIO TITLE-->
 <h2 id="titleName" class="sectionHead">Christopher J. Molitor</h2>
@@ -27,21 +40,6 @@ title: "关于"
 <!--BIO-->
 <div id="bio">
 	<h2>Front-End Web Designer / Developer</h2>
-	
-	<!--SOCIAL LINKS-->
-	<div id="socialIcons">
-		<a class="socialIcon" target="_blank" id="facebookIcon" href="http://themolitor.com/facebook"></a>
-		<a class="socialIcon" target="_blank" id="twitterIcon" href="http://themolitor.com/twitter"></a>
-		<a class="socialIcon" target="_blank" id="youTubeIcon" href="http://youtube.com/themolitor"></a>
-		<a class="socialIcon" target="_blank" id="gplusIcon" href="http://themolitor.com/gplus"></a>
-		<a class="socialIcon" target="_blank" id="dribbbleIcon" href="http://dribbble.com/themolitor"></a>
-		<!--MORE ICON OPTIOPS...
-		<a class="socialIcon" target="_blank" id="flickrIcon" href="#>"></a>
-		<a class="socialIcon" target="_blank" id="vimeoIcon" href="#"></a>
-		<a class="socialIcon" target="_blank" id="mySpaceIcon" href="#"></a>
-		<a class="socialIcon" target="_blank" id="rssIcon" href="#"></a>
-		-->
-	</div><!--end socialIcons-->
 
 	<!--BIO PARAGRAPH-->
 	<p>	
@@ -287,8 +285,11 @@ title: "关于"
 <div class="clear"></div>
 </div><!--end wrapper-->
 
-<!--COPYRIGHT-->
-<div id="copyright">&copy; 2012 - Designed and developed by THE MOLITOR. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>
+	<footer>
+    {% include footer.html %}
+
+    {% include script.html %}
+    </footer>
 
 <!--SCRIPTS-->
 <script src="js/jquery.js"></script>

@@ -87,15 +87,15 @@ $(document).ready(function(){
 	////////////////
 	view.scroll(function(){
 		//SHOW/HIDE TOP PANEL
-		if(view.scrollTop() > 140){
-			$('#sticker').stop().animate({top:"0"},500);
-		} else {
-			$('#sticker').stop().animate({top:"-60px"},500);
-		}
+		// if(view.scrollTop() > 140){
+		// 	$('#sticker').stop().animate({top:"0"},500);
+		// } else {
+		// 	$('#sticker').stop().animate({top:"-60px"},500);
+		// }
 		
-		//PARALLAX BACKGROUND STUFF
-		var scrollPosition = $(window).scrollTop() * .25;
-		body.css({backgroundPosition:'0px -'+scrollPosition+'px'});
+		// //PARALLAX BACKGROUND STUFF
+		// var scrollPosition = $(window).scrollTop() * .25;
+		// body.css({backgroundPosition:'0px -'+scrollPosition+'px'});
 	});
 		
 	////////////////
