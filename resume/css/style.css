@@ -224,7 +224,7 @@ li.s10 {width: 7.714285714285714%;}
 	background:#444;
 	border-radius:3px;
 } 
-#contactform input[type="submit"]:hover {background: #000;}
+#contactform input[type="submit"]:hover {background: #019a61;}
 .required {color: red;}
 #required {float: left; margin-top: 10px; color: #bbb; display: none;}
 
@@ -260,7 +260,7 @@ ul#recommends li > p {float: right; width: 57%; margin-bottom: 25px;}
 /* ------------------------*/
 /*---COPYRIGHT STUFF------*/
 /* ----------------------*/
-#copyright {text-align: center; font:bold 10px sans-serif; text-transform: uppercase; color: #aaa; margin: 20px 0 60px; text-shadow: 1px 1px 1px #fff;}
+/*#copyright {text-align: center; font:bold 10px sans-serif; text-transform: uppercase; color: #aaa; margin: 20px 0 60px; text-shadow: 1px 1px 1px #fff;}*/
 
 /* ------------------------*/
 /*--RESPONSIVE STUFF------*/
@@ -297,11 +297,3 @@ body.respond ul#jobs li p,
 body.respond ul#schools li > p,
 body.respond ul#recommends li > p {float: none; width: 100%; margin-bottom: 50px; margin-top: 10px;}
 
-body.respond #contactInfo,
-body.respond #emailMessage {float: none; width: 100%;}
-body.respond #contactform input[type="submit"] {float: none; width: auto;}
-
-body.respond #contactform input, 
-body.respond #contactform textarea {width: 90%;}
-
-body.respond #messageSent {margin-top: 20px;}

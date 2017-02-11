@@ -62,7 +62,3 @@ ul#skills li {
     text-transform: uppercase;
 }
 ul#skills li del {display: none;}
-
-h2#contact,
-#contactform,
-#messageSent {display: none;}
