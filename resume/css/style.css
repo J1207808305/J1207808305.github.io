@@ -304,6 +304,4 @@ body.respond #contactform input[type="submit"] {float: none; width: auto;}
 body.respond #contactform input, 
 body.respond #contactform textarea {width: 90%;}
 
-body.respond #copyright {margin: 60px auto;}
-
 body.respond #messageSent {margin-top: 20px;}
