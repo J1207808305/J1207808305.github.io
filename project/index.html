@@ -10,9 +10,6 @@ header-img: "img/about-bg.jpg"
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head> 
     {% include head.html %}  
-    <link rel="shortcut icon" href="favicon.ico">  
-    <link href='http://fonts.useso.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
     <!-- Global CSS -->
     <!--link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css"-->
     <!-- Plugins CSS -->    
@@ -30,6 +27,8 @@ header-img: "img/about-bg.jpg"
 </head> 
 
 <body data-spy="scroll">
+
+{% include nav.html %}
     
     <!---//Facebook button code-->
     <!--div id="fb-root"></div>
@@ -42,6 +41,20 @@ header-img: "img/about-bg.jpg"
     }(document, 'script', 'facebook-jssdk'));</script-->
     
     <!-- ******HEADER****** --> 
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading" id="tag-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
     
     <!-- ******ABOUT****** --> 
     <section id="about" class="about section">
@@ -251,7 +264,7 @@ header-img: "img/about-bg.jpg"
     <script type="text/javascript" src="plugins/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="plugins/jquery-migrate-1.2.1.min.js"></script>    
     <script type="text/javascript" src="plugins/jquery.easing.1.3.js"></script>   
-    <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>     
+    <!--script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script-->     
     <script type="text/javascript" src="plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
     <script type="text/javascript" src="plugins/prism/prism.js"></script>    
     <script type="text/javascript" src="js/main.js"></script>   
