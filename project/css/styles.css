@@ -267,7 +267,7 @@ pre code {
 .contact {
   padding: 80px 0;
   background: #e2e2e2;
-  color: #fff;
+  color: #444444;
 }
 .contact .contact-inner {
   max-width: 760px;
@@ -330,7 +330,7 @@ pre code {
   margin-bottom: 30px;
 }
 .contact .author-message .speech-bubble a {
-  color: #fff;
+  color: #444444;
 }
 .contact .author-message .speech-bubble:after {
   position: absolute;
