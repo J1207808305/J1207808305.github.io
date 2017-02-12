@@ -143,7 +143,7 @@ pre code {
 }
 .features .feature-list li .fa {
   margin-right: 5px;
-  color: #fff;
+  color: #444444;
 }
 /* ======= Docs Section ======= */
 .docs {
@@ -285,7 +285,7 @@ pre code {
   color: #404040;
 }
 .contact a:hover {
-  color: #042a36;
+  color: #019a61;
 }
 .contact .author-message {
   position: relative;
@@ -351,7 +351,7 @@ pre code {
   color: #404040;
 }
 .contact .author-message .speech-bubble .source .title {
-  color: #0c86ae;
+  color: #404040;
 }
 .contact .info .sub-title {
   color: #0e98c5;
