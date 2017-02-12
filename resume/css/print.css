@@ -1,5 +1,5 @@
 * {margin: 0; padding: 0;}
-body {font-family: sans-serif; line-height: 1.2em; background: #fafafa; color: #444;}
+body {font-family: 'Lato', arial,sans-serif; line-height: 1.2em; background: #fafafa; color: #444;}
 #wrapper {margin: 0px; padding: 0px; background: #fff; box-shadow:none;}
 ul {margin: 0 0 0 15px; position: relative;}
 li {margin: 0 0 5px 0; position: relative; font-size: 13px;}
