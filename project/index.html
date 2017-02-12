@@ -1,7 +1,7 @@
 ---
 title: 项目
 description: "my project"
-header-img: "img/about-bg.jpg"
+header-img: "img/about-bg3.jpg"
 ---
 
 <!DOCTYPE html>
@@ -42,13 +42,14 @@ header-img: "img/about-bg.jpg"
     
     <!-- ******HEADER****** --> 
 
-    <!-- Page Header -->
+<!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading" id="tag-heading">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <!--<hr class="small">-->
                     <span class="subheading">{{ page.description }}</span>
                 </div>
             </div>
@@ -153,11 +154,10 @@ header-img: "img/about-bg.jpg"
                 </ul>
                 <div class="code-block">
                     <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
-                    <pre><code class="language-markup">
-    &ltp class="my-style"&gt
-      Hello World!
-    &lt/p&gt
-                     </code></pre>
+                    <pre><code class="language-bash">
+    sudo apt-get install git
+                     </code>
+                    </pre>
                 </div><!--//code-block-->
             </div><!--//block-->
             
@@ -168,7 +168,7 @@ header-img: "img/about-bg.jpg"
                 <div class="code-block">
                     <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
                     <pre>
-    <code class="language-css">
+    <code class="language-c">
     /*   
      * Template Name: devAid - Responsive Website Template for developers
      * Version: 1.0
@@ -176,19 +176,13 @@ header-img: "img/about-bg.jpg"
      * Website: #
      * Twitter: @3rdwave_themes
     */
-    body {
-      font-family: 'Lato', arial, sans-serif;
-      color: #444444;
-      font-size: 16px;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    #include <stdio.h>
+   
+    #include &ltstdio.h&gt
 
     int main()
     {
         printf("hello word!");
+        return 0;
     }
     </code></pre>
                 </div><!--//code-block-->
