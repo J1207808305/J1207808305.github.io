@@ -1,4 +1,4 @@
 #Johnny's website
 
-###[View Live Johnny &rarr;](https://clspring.com)
+###[View Live Johnny &rarr;](http://clspring.com)
 
