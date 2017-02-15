@@ -125,9 +125,9 @@ header-img: "img/project_bg.png"
     <!-- ******FEATURES****** --> 
     <section id="features" class="features section">
         <div class="container text-center">
-            <h2 class="title">YOU NEED THIS</h2>
+            <h2 class="title">MY DEVELOPMENT ENVIRONMENT</h2>
             <ul class="feature-list list-unstyled">
-                <li><i class="fa fa-check"></i> a linux system </li>
+                <li><i class="fa fa-check"></i> Ubuntu 16.04 </li>
                 <li><i class="fa fa-check"></i> python 2.7</li>
                 <li><i class="fa fa-check"></i> a little math konwledge</li>
             </ul>
@@ -140,7 +140,7 @@ header-img: "img/project_bg.png"
             <div class="docs-inner">
             <h2 class="title text-center">Get Started</h2>            
             <div class="block">
-                <h3 class="sub-title text-center">BASH</h3>
+                <h3 class="sub-title text-center">INSTALL</h3>
                 <p><a href="http://prismjs.com/" target="_blank">PrismJS</a> is used as the syntax highlighter here.</p>
                 <p>Below are the details of the custom PrismJS build used in this template. You can build your own version via their website should you need to.</p>
                 <ul class="list-unstyled">
@@ -151,7 +151,11 @@ header-img: "img/project_bg.png"
                 <div class="code-block">
                     <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
                     <pre><code class="language-bash">
-    sudo apt-get install git
+    # 仅使用 CPU 的版本
+    $ pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl    
+
+    # 开启 GPU 支持的版本 (安装该版本的前提是已经安装了 CUDA sdk)
+    $ pip install https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl    
                      </code>
                     </pre>
                 </div><!--//code-block-->
