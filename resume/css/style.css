@@ -172,62 +172,11 @@ ul#skills li:after {
 	color: #aaa;
 }
 ul#skills li.s100:after {content: "100%";}
-
-ul#skills li.s50:after {content: "99%";}
-ul#skills li.s50:after {content: "98%";}
-ul#skills li.s50:after {content: "97%";}
-ul#skills li.s50:after {content: "96%";}
-ul#skills li.s50:after {content: "95%";}
-ul#skills li.s50:after {content: "94%";}
-ul#skills li.s50:after {content: "93%";}
-ul#skills li.s50:after {content: "92%";}
-ul#skills li.s50:after {content: "91%";}
-ul#skills li.s50:after {content: "90%";}
-
-ul#skills li.s50:after {content: "89%";}
-ul#skills li.s50:after {content: "88%";}
-ul#skills li.s50:after {content: "87%";}
-ul#skills li.s50:after {content: "86%";}
-ul#skills li.s50:after {content: "85%";}
-ul#skills li.s50:after {content: "84%";}
-ul#skills li.s50:after {content: "83%";}
-ul#skills li.s50:after {content: "82%";}
-ul#skills li.s50:after {content: "81%";}
-ul#skills li.s50:after {content: "80%";}
-
-ul#skills li.s50:after {content: "79%";}
-ul#skills li.s50:after {content: "78%";}
-ul#skills li.s50:after {content: "77%";}
-ul#skills li.s50:after {content: "76%";}
-ul#skills li.s50:after {content: "75%";}
-ul#skills li.s50:after {content: "74%";}
-ul#skills li.s50:after {content: "73%";}
-ul#skills li.s50:after {content: "72%";}
-ul#skills li.s50:after {content: "71%";}
-ul#skills li.s50:after {content: "70%";}
-
-ul#skills li.s50:after {content: "69%";}
-ul#skills li.s50:after {content: "68%";}
-ul#skills li.s50:after {content: "67%";}
-ul#skills li.s50:after {content: "66%";}
-ul#skills li.s50:after {content: "65%";}
-ul#skills li.s50:after {content: "64%";}
-ul#skills li.s50:after {content: "63%";}
-ul#skills li.s50:after {content: "62%";}
-ul#skills li.s50:after {content: "61%";}
-ul#skills li.s50:after {content: "60%";}
-
-ul#skills li.s50:after {content: "59%";}
-ul#skills li.s50:after {content: "58%";}
-ul#skills li.s50:after {content: "57%";}
-ul#skills li.s50:after {content: "56%";}
-ul#skills li.s50:after {content: "55%";}
-ul#skills li.s50:after {content: "54%";}
-ul#skills li.s50:after {content: "53%";}
-ul#skills li.s50:after {content: "52%";}
-ul#skills li.s50:after {content: "51%";}
+ul#skills li.s90:after {content: "90%";}
+ul#skills li.s80:after {content: "80%";}
+ul#skills li.s70:after {content: "70%";}
+ul#skills li.s60:after {content: "60%";}
 ul#skills li.s50:after {content: "50%";}
-
 ul#skills li.s40:after {content: "40%";}
 ul#skills li.s30:after {content: "30%";}
 ul#skills li.s20:after {content: "20%";}
@@ -238,64 +187,11 @@ ul#skills li span {display: none;}
 ul#skills li:hover {background: #222;}
 
 li.s100 {width: 97.71428571428571%;}
-
-li.s99 {width: 96.714285714285715%;}
-li.s98 {width: 95.714285714285715%;}
-li.s97 {width: 94.714285714285715%;}
-li.s96 {width: 93.714285714285715%;}
-li.s95 {width: 92.714285714285715%;}
-li.s94 {width: 91.714285714285715%;}
-li.s93 {width: 90.714285714285715%;}
-li.s92 {width: 89.714285714285715%;}
-li.s91 {width: 88.714285714285715%;}
-li.s90 {width: 87.714285714285715%;}
-
-li.s89 {width: 86.714285714285715%;}
-li.s88 {width: 85.714285714285715%;}
-li.s87 {width: 84.714285714285715%;}
-li.s86 {width: 83.714285714285715%;}
-li.s85 {width: 82.714285714285715%;}
-li.s84 {width: 81.714285714285715%;}
-li.s83 {width: 80.714285714285715%;}
-li.s82 {width: 79.714285714285715%;}
-li.s81 {width: 78.714285714285715%;}
-li.s80 {width: 77.714285714285715%;}
-
-
-li.s79 {width: 76.714285714285715%;}
-li.s78 {width: 75.714285714285715%;}
-li.s77 {width: 74.714285714285715%;}
-li.s76 {width: 73.714285714285715%;}
-li.s75 {width: 72.714285714285715%;}
-li.s74 {width: 71.714285714285715%;}
-li.s73 {width: 70.714285714285715%;}
-li.s72 {width: 69.714285714285715%;}
-li.s71 {width: 68.714285714285715%;}
-li.s70 {width: 67.714285714285715%;}
-
-li.s69 {width: 66.714285714285715%;}
-li.s68 {width: 65.714285714285715%;}
-li.s67 {width: 64.714285714285715%;}
-li.s66 {width: 63.714285714285715%;}
-li.s65 {width: 62.714285714285715%;}
-li.s64 {width: 61.714285714285715%;}
-li.s63 {width: 60.714285714285715%;}
-li.s62 {width: 59.714285714285715%;}
-li.s61 {width: 58.714285714285715%;}
+li.s90 {width: 87.71428571428571%;}
+li.s80 {width: 77.71428571428571%;}
+li.s70 {width: 67.71428571428571%;}
 li.s60 {width: 57.714285714285715%;}
-
-
-li.s59 {width: 56.714285714285715%;}
-li.s58 {width: 55.714285714285715%;}
-li.s57 {width: 54.714285714285715%;}
-li.s56 {width: 53.714285714285715%;}
-li.s55 {width: 52.714285714285715%;}
-li.s54 {width: 51.714285714285715%;}
-li.s53 {width: 50.714285714285715%;}
-li.s52 {width: 49.714285714285715%;}
-li.s51 {width: 48.714285714285715%;}
 li.s50 {width: 47.714285714285715%;}
-
 li.s40 {width: 37.714285714285715%;}
 li.s30 {width: 27.714285714285715%;}
 li.s20 {width: 17.714285714285715%;}
