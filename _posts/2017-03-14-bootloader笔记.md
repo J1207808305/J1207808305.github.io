@@ -10,9 +10,9 @@ tags:
     - STM32
 ---
 
-# bootloader 设计文档 #
+# STM32 bootloader(基于USART) 笔记 #
 
->本文档旨在帮助开发者理解Bootloader的软件架构及软件接口，便于以后的二次开发或者软件升级
+>本文主要介绍基于Ymodem下的Bootloader的相关知识，包括X,Y,Z modem的发展历史，STM32 Bootloader 启动流程分析，最后给出一份代码供参考(在github上)，欢迎大家frok，如果你有更好的想法，欢迎给我发pull request。
 
 #目录#
 
