@@ -277,11 +277,11 @@ textarea.form-control {
     font-weight: 800;
 }
 
-.pfblock-subtitle {
+/*.pfblock-subtitle {
 	font-family: Raleway, "Times New Roman", Times, sans-serif;
 	font-style: normal;
 	font-size: 18px;
-}
+}*/
 
 .pfblock-line {
 	background: rgba(135, 135, 135, 0.5);
@@ -387,13 +387,13 @@ textarea.form-control {
     font-weight: 800;
 }
 
-.start {
+/*.start {
 	font-family: Raleway, "Times New Roman", Times, sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	text-transform: none;
 	margin: 15px 0;
-}
+}*/
 
 /* ---------------------------------------------- /*
  * Servise

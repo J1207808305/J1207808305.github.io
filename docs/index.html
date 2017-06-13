@@ -1,3 +1,7 @@
+---
+title: "文档"
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +10,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Clean - One Page Personal Portfolio</title>
+	{% include head.html %}
 
 	<!-- CSS -->
 	<link href="/docs/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -21,6 +25,8 @@
        
 </head>
 <body>
+
+    {% include nav.html %}
 
 	<!-- Preloader -->
 
@@ -67,7 +73,7 @@
                         <figure class="effect-bubba">
                             <img src="/docs/assets/images/item-1.jpg" alt="img01"/>
                             <figcaption>
-								<a href="/docs/doc/index.html"> 
+								<a href="/docs/doc.html"> 
                                 hello
                                 </a>
                             </figcaption>			
@@ -168,6 +174,12 @@
     <script src="/docs/assets/js/waypoints.min.js"></script>
     <script src="/docs/assets/js/jquery.cbpQTRotator.js"></script>
 	<script src="/docs/assets/js/custom.js"></script>
+    {% include script.html %}
 
 </body>
+
+<footer>
+{% include footer.html %}
+</footer>
+
 </html>
