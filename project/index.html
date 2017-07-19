@@ -1,46 +1,19 @@
 ---
 title: "项目"
 description: "Hey, this is Johnny."
-header-img: "img/about-bg.jpg"
+header-img: "img/abou.jpg"
 ---
 
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head> 
     {% include head.html %}  
-    <!-- Global CSS -->
-    <!--link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css"-->
     <!-- Plugins CSS -->    
-    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="plugins/prism/prism.css">
+    <link rel="stylesheet" href="/project/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/project/plugins/prism/prism.css">
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="css/styles.css">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link id="theme-style" rel="stylesheet" href="/project/css/styles.css">
 
 </head> 
-
-<body data-spy="scroll">
-
-{% include nav.html %}
-    
-    <!---//Facebook button code-->
-    <!--div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script-->
-    
-    <!-- ******HEADER****** --> 
 
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
@@ -56,69 +29,16 @@ header-img: "img/about-bg.jpg"
         </div>
     </div>
 </header>
+
+<body data-spy="scroll">
+
+{% include nav.html %}
     
     <!-- ******ABOUT****** --> 
     <section id="about" class="about section">
         <div class="container">
             <h2 class="title text-center">关于 TensorFlow</h2>
-            <p class="intro text-center">TensorFlow是谷歌基于DistBelief进行研发的第二代人工智能学习系统，是一个将复杂的数据结构传输至人工智能神经网中进行分析和处理过程的系统.</p>
-            <div class="row">
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-holder">
-                        <i class="fa fa-heart"></i>
-                    </div>
-                    <div class="content">
-                        <h3 class="sub-title">高度的灵活性</h3>
-                        <p>TensorFlow提供了有用的工具来帮助你组装“子图”（常用于神经网络），当然用户也可以自己在Tensorflow基础上写自己的“上层库”。定义顺手好用的新复合操作和写一个python函数一样容易，而且也不用担心性能损耗。当然万一发现找不到想要的底层数据操作，也可以自己写一点c++代码来丰富底层的操作。</p>
-                    </div><!--//content-->
-                </div><!--//item-->
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-holder">
-                        <i class="fa fa-clock-o"></i>
-                    </div>
-                    <div class="content">
-                        <h3 class="sub-title">性能最优化</h3>
-                        <p>比如说你又一个32个CPU内核、4个GPU显卡的工作站，想要将你工作站的计算潜能全发挥出来？由于Tensorflow 给予了线程、队列、异步操作等以最佳的支持，Tensorflow 让你可以将你手边硬件的计算潜能全部发挥出来。你可以自由地将Tensorflow图中的计算元素分配到不同设备上，Tensorflow可以帮你管理好这些不同副本。</p>
-                    </div><!--//content-->
-                </div><!--//item-->
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-holder">
-                        <i class="fa fa-crosshairs"></i>
-                    </div>
-                    <div class="content">
-                        <h3 class="sub-title">自动求微分</h3>
-                        <p>基于梯度的机器学习算法会受益于Tensorflow自动求微分的能力。作为Tensorflow用户，你只需要定义预测模型的结构，将这个结构和目标函数（objective function）结合在一起，并添加数据，Tensorflow将自动为你计算相关的微分导数。计算某个变量相对于其他变量的导数仅仅是通过扩展你的图来完成的，所以你能一直清楚看到究竟在发生什么。</p>
-                    </div><!--//content-->
-                </div><!--//item-->           
-                <div class="clearfix visible-md"></div>    
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-holder">
-                        <i class="fa fa-tablet"></i>
-                    </div>
-                    <div class="content">
-                        <h3 class="sub-title">真正的可移植性（Portability）</h3>
-                        <p>Tensorflow 在CPU和GPU上运行，比如说可以运行在台式机、服务器、手机移动设备等等。想要在没有特殊硬件的前提下，在你的笔记本上跑一下机器学习，可以将你的训练模型在多个CPU上规模化运算。可以将你的训练好的模型作为产品的一部分用到手机app里，可以将模型作为云端服务运行在自己的服务器上，或者运行在Docker容器里。</p>
-                    </div><!--//content-->
-                </div><!--//item-->                
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-holder">
-                        <i class="fa fa-code"></i>
-                    </div>
-                    <div class="content">
-                        <h3 class="sub-title">多语言支持</h3>
-                        <p>Tensorflow 有一个合理的c++使用界面，也有一个易用的python使用界面来构建和执行你的graphs。你可以直接写python/c++程序，也可以用交互式的ipython界面来用Tensorflow尝试些想法，它可以帮你将笔记、代码、可视化等有条理地归置好。当然这仅仅是个起点——我们希望能鼓励你创造自己最喜欢的语言界面，比如Go，Java，Lua，Javascript，或者是R。</p>
-                    </div><!--//content-->
-                </div><!--//item-->
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-holder">
-                        <i class="fa fa-coffee"></i>
-                    </div>
-                    <div class="content">
-                        <h3 class="sub-title">将科研和产品联系在一起</h3>
-                        <p>过去如果要将科研中的机器学习想法用到产品中，需要大量的代码重写工作。那样的日子一去不复返了！在Google，科学家用Tensorflow尝试新的算法，产品团队则用Tensorflow来训练和使用计算模型，并直接提供给在线用户。使用Tensorflow可以让应用型研究者将想法迅速运用到产品中，也可以让学术性研究者更直接地彼此分享代码，从而提高科研产出率。</p>
-                    </div><!--//content-->
-                </div><!--//item-->               
-            </div><!--//row-->            
+            <p class="intro text-center">TensorFlow是谷歌基于DistBelief进行研发的第二代人工智能学习系统，是一个将复杂的数据结构传输至人工智能神经网中进行分析和处理过程的系统.</p>    
         </div><!--//container-->
     </section><!--//about-->
     
@@ -150,13 +70,6 @@ header-img: "img/about-bg.jpg"
                 </ul>
                 <div class="code-block">
                     <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
-                    <pre><code class="language-bash">
-    # 仅使用 CPU 的版本
-    $ pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl    
-
-    # 开启 GPU 支持的版本 (安装该版本的前提是已经安装了 CUDA sdk)
-    $ pip install https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl    
-                     </code>
                     </pre>
                 </div><!--//code-block-->
             </div><!--//block-->
@@ -165,24 +78,19 @@ header-img: "img/about-bg.jpg"
                 <h3 class="sub-title text-center">C</h3>
                 <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
                 
-                <div class="code-block">
-                    <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
-                    <pre>
-    <code class="language-c">
-    
-    /**
-     *  example code for "hello word!"
-     */
-   
-    #include &ltstdio.h&gt
+                {% highlight c %}                    
+                    /**
+                     *  example code for "hello word!"
+                     */
+                   
+                    #include <stdio.h>
 
-    int main()
-    {
-        printf("hello word!");
-        return 0;
-    }
-    </code></pre>
-                </div><!--//code-block-->
+                    int main()
+                    {
+                        printf("hello word!");
+                        return 0;
+                    }
+                {% endhighlight %}
             </div><!--//block-->
             
             <div class="block">
@@ -252,13 +160,13 @@ header-img: "img/about-bg.jpg"
     </div> 
      
     <!-- Javascript -->          
-    <script type="text/javascript" src="plugins/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="plugins/jquery-migrate-1.2.1.min.js"></script>    
-    <script type="text/javascript" src="plugins/jquery.easing.1.3.js"></script>   
+    <script type="text/javascript" src="/project/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/project/plugins/jquery-migrate-1.2.1.min.js"></script>    
+    <script type="text/javascript" src="/project/plugins/jquery.easing.1.3.js"></script>   
     <!--script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script-->     
-    <script type="text/javascript" src="plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
-    <script type="text/javascript" src="plugins/prism/prism.js"></script>    
-    <script type="text/javascript" src="js/main.js"></script>   
+    <script type="text/javascript" src="/project/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
+    <script type="text/javascript" src="/project/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="/project/js/main.js"></script>   
     {% include script.html %}
 
     <footer>
