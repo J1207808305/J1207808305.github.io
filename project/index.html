@@ -1,7 +1,7 @@
 ---
 title: "项目"
-description: "Hey, this is Johnny."
-header-img: "img/abou.jpg"
+description: "欢迎来到物联网的世界"
+header-img: "img/iot.jpg"
 ---
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ header-img: "img/abou.jpg"
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div class="site-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <!--h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1-->
                     <!--<hr class="small">-->
                     <span class="subheading">{{ page.description }}</span>
                 </div>
@@ -37,19 +37,24 @@ header-img: "img/abou.jpg"
     <!-- ******ABOUT****** --> 
     <section id="about" class="about section">
         <div class="container">
-            <h2 class="title text-center">关于 TensorFlow</h2>
-            <p class="intro text-center">TensorFlow是谷歌基于DistBelief进行研发的第二代人工智能学习系统，是一个将复杂的数据结构传输至人工智能神经网中进行分析和处理过程的系统.</p>    
+            <h2 class="title text-center">Sakura</h2>
+            <p class="intro text-center">Sakura 是一个基于Cortex M4的小型物联网定位系统，致力于打造一个室内高精度定位兼物联网通信的系统平台，用于物联网通信节点，室内移动设备定位终端等场景。</p>    
         </div><!--//container-->
     </section><!--//about-->
     
     <!-- ******FEATURES****** --> 
     <section id="features" class="features section">
         <div class="container text-center">
-            <h2 class="title">MY DEVELOPMENT ENVIRONMENT</h2>
+            <h2 class="title">硬件&nbsp;&nbsp;开发环境&nbsp;&nbsp;平台</h2>
             <ul class="feature-list list-unstyled">
-                <li><i class="fa fa-check"></i> Ubuntu 16.04 </li>
-                <li><i class="fa fa-check"></i> python 2.7</li>
-                <li><i class="fa fa-check"></i> a little math konwledge</li>
+                <li><i class="fa fa-check"></i> WINDOWS10 &nbsp;&nbsp; Ubuntu 16.04</li>
+                <li><i class="fa fa-check"></i> 
+                    <a href="http://www.ti.com.cn/tool/cn/ek-tm4c123gxl#buy">TM4C123GXL</a>&nbsp;&nbsp;
+                    <!-- <a href="http://beagleboard.org/black">BeagleBone Black</a>&nbsp;&nbsp; -->
+                    <a href="https://www.decawave.com/products/dwm1000-module">DWM1000</a>&nbsp;&nbsp; 
+                    <a href="https://www.invensense.com/products/motion-tracking/9-axis/mpu-9250/">MPU9250</a>
+                </li>
+                <li><i class="fa fa-check"></i><!-- LINUX&nbsp;&nbsp; --><a href="https://www.zephyrproject.org/">ZEPHYR</a></li>
             </ul>
         </div><!--//container-->
     </section><!--//features-->
@@ -58,15 +63,20 @@ header-img: "img/abou.jpg"
     <section id="docs" class="docs section">
         <div class="container">
             <div class="docs-inner">
-            <h2 class="title text-center">Get Started</h2>            
+            <h2 class="title text-center">开始你的开发</h2>            
             <div class="block">
-                <h3 class="sub-title text-center">INSTALL</h3>
-                <p><a href="http://prismjs.com/" target="_blank">PrismJS</a> is used as the syntax highlighter here.</p>
-                <p>Below are the details of the custom PrismJS build used in this template. You can build your own version via their website should you need to.</p>
+                <h3 class="sub-title text-center">硬件准备</h3>
+                <p></p>
+                <!-- <p>Below are the details of the custom PrismJS build used in this template. You can build your own version via their website should you need to.</p> -->
                 <ul class="list-unstyled">
-                    <li><strong>Compression level:</strong> Minified</li>
-                    <li><strong>Theme:</strong> Okaidia</li>
-                    <li><strong>Languages:</strong> Markup, C, C++, BASH, GIT and Python</li>
+                    <li><strong>开发板:</strong> TM4C123GXL:Tiva C 系列 TM4C123G LaunchPad 评估套件是用于德州仪器 (TI) 基于 ARM® Cortex™-M4F 的微控制器的低成本评估平台。你可以从官网或者淘宝等购买此开发板。</li>
+                    <div align="center">
+
+                        <img align="center" src="/img/TITivaLaunchpad2A.jpg" width=300px height=366px alt="">
+
+                    </div>
+                    
+                    <li><strong>定位模块:</strong> Thunb v1.0</li>
                 </ul>
                 <div class="code-block">
                     <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
@@ -75,38 +85,32 @@ header-img: "img/abou.jpg"
             </div><!--//block-->
             
             <div class="block">
-                <h3 class="sub-title text-center">C</h3>
-                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
-                
-                {% highlight c %}                    
-                    /**
-                     *  example code for "hello word!"
-                     */
-                   
-                    #include <stdio.h>
+                <h3 class="sub-title text-center">从github获取源代码</h3>
+                <p>Sakura 项目基于zephyr嵌入式系统开发,相关的移植工作还在进行中，下面提供的代码为定位的基本例程，相对应的开发环境为IAR。</p>
 
-                    int main()
-                    {
-                        printf("hello word!");
-                        return 0;
-                    }
+                {% highlight bash %}
+$ git clone https://github.com/J1207808305/Thunb.git
                 {% endhighlight %}
+
             </div><!--//block-->
+
+            <div class="block">
+                <h3 class="sub-title text-center">准备开发环境</h3>
+                <p>安装IAR开发环境，进入Thunb/project目录下，双击thunb.eww开始项目的开发之旅。</p>
+
+<!--                 {% highlight bash %}
+$ export ZEPHYR_GCC_VARIANT=zephyr
+$ export ZEPHYR_SDK_INSTALL_DIR=<sdk installation directory>
+                {% endhighlight %} -->
+            </div><!--//block--> 
             
+  
             <div class="block">
-                <h3 class="sub-title text-center">git</h3>
-                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit ligula eget dolor.</p>
-                <div class="code-block">
-                    <pre><code class="language-git">
-    git commit
-                    </code></pre>
-                </div><!--//code-block-->
-            </div><!--//block-->   
-            <div class="block">
-                <h3 class="sub-title text-center">Full Documentation</h3>
-                <p>If your documentation is very long you can host the full docs page (including FAQ etc) on GitHub and provide a Call to Action button below to direct users there.</p>
+                <h3 class="sub-title text-center">文档及源代码</h3>
+                <p>由于本项目的文档单独托管，你可以通过下面的链接查看并下载完整的文档，另外欢迎爱好者对文档提供更加宝贵的意见。同样，欢迎提供为本项目pull request来使其更加完善。</p>
                 <p class="text-center">
-                    <a class="btn btn-cta-primary" href="#" target="_blank">More on GitHub</a>
+                    <a class="btn btn-cta-primary" href="https://github.com/J1207808305/Thunb.git" target="_blank">GitHub源码</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="btn btn-cta-primary" href="#" target="_blank">&nbsp;&nbsp;项目文档&nbsp;&nbsp;</a>
                 </p>
             </div><!--//block-->
             
@@ -118,17 +122,17 @@ header-img: "img/abou.jpg"
     <section id="license" class="license section">
         <div class="container">
             <div class="license-inner">
-            <h2 class="title text-center">License</h2>
+            <h2 class="title text-center">许可证</h2>
                 <div class="info">
-                    <p>This Tensorflow  is made by google for developers under Apache 2.0 License </p>
-                    <p><strong>[Tip for developers]:</strong> If your project is open source, you might want to put a PayPal "Donate" button below so your users can express their gratitude. If your project is commercial, you can put a PayPal "Buy Now" button instead.</p>
+                    <p>Sakura 项目所涉及的源代码均遵循谷歌<a href="https://www.apache.org/licenses/LICENSE-2.0"><strong>Apache 2.0许可证协议</strong></a>，如果您在使用或修改本项目代码，请遵循此协议。</p>
+                    <!-- <p><strong>[Tip for developers]:</strong> If your project is open source, you might want to put a PayPal "Donate" button below so your users can express their gratitude. If your project is commercial, you can put a PayPal "Buy Now" button instead.</p> -->
                 </div><!--//info-->
             </div><!--//license-inner-->
         </div><!--//container-->
     </section><!--//how-->
 
     <!-- ******CONTACT****** --> 
-    <section id="contact" class="contact section has-pattern">
+<!--     <section id="contact" class="contact section has-pattern">
         <div class="container">
             <div class="contact-inner">
                 <h2 class="title  text-center">Contact</h2>
@@ -136,8 +140,8 @@ header-img: "img/abou.jpg"
                 <div class="author-message">                      
                     <div class="profile">
                         <img class="img-responsive" src="images/profile.jpg" alt="" />
-                    </div><!--//profile-->
-                    <div class="speech-bubble">
+                    </div> --><!--//profile-->
+ <!--                    <div class="speech-bubble">
                         <h3 class="sub-title">Want to get more freebies in the future?</h3>
                         <p>I tweet about #UX and #webdev related resources/content at @3rdwave_themes 
                         If you like what I do, you can follow me on twitter and I will keep you informed about my next free template there :)</p>
@@ -145,15 +149,15 @@ header-img: "img/abou.jpg"
                         <div class="source">
                             <span class="name">Johnny</span>
                             <br />
-                            <span class="title">嵌入式软件程序猿</span>
-                        </div><!--//source-->
-                    </div><!--//speech-bubble-->                        
-                </div><!--//author-message-->
+                            <span class="title">嵌入式软件程序猿</span> -->
+                        <!-- </div> --><!--//source-->
+                    <!-- </div> --><!--//speech-bubble-->                        
+                <!-- </div> --><!--//author-message-->
 
-                </div><!--//info-->
-            </div><!--//contact-inner-->
-        </div><!--//container-->
-    </section><!--//contact--> 
+                <!-- </div> --><!--//info-->
+            <!-- </div> --><!--//contact-inner-->
+        <!-- </div> --><!--//container-->
+   <!--  </section> --><!--//contact--> 
 
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
