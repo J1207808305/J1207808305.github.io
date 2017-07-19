@@ -19,11 +19,27 @@
                     <li>
                         <a href="{{ site.baseurl }}/">主页</a>
                     </li>
-                    {% for page in site.pages %}{% if page.title %}
+<!--                     {% for page in site.pages %}{% if page.title %}
                     <li>
                         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                     </li>
-                    {% endif %}{% endfor %}
+                    {% endif %}{% endfor %} -->
+
+                    <li>
+                        <a href="{{ site.baseurl }}/project">项目</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ site.baseurl }}/doc">文档</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ site.baseurl }}/blog">博客</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ site.baseurl }}/resume">关于</a>
+                    </li>
                 </ul>
             </div>
         </div>
