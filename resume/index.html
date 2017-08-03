@@ -221,21 +221,7 @@ header-img: "img/about-bg.jpg"
 <h3 id="contact" class="sectionHead" target="_blank">&gt;&gt;&gt; <a href="/pdf/resume.pdf">下载我的简历</a></h2>
 </h2>
 
-<div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: 'location.href', 
-  owner: 'J1207808305',
-  repo: 'J1207808305.github.io',
-  oauth: {
-    client_id: '6634aaaeadbd99f7277a',
-    client_secret: 'b27649164c5d8fa418f0e6f8e988bda909b17c76',
-  },
-})
-gitment.render('container')
-</script>
+{% include discuss.html %}
 
 <div class="clear"></div>
 </div><!--end wrapper-->
